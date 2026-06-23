@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div id="loader">
+
+    <img
+        src="img/Logo_vivvan_los_perros_page-0001-removebg-preview.png"
+        alt="Vivan Los Perros"
+        class="loader-logo"
+    >
+
+    <p>Preparando tu pedido...</p>
+
+</div>
+
+<div class="app">
+
+             <div class="banner">
+
+            <button type="button" class="back-btn" aria-label="Volver">
+             <img src="assets/icons/flecha.svg" alt="">
+            </button>
+
+            <img src="img/imgMayales.png" class="banner-img" alt="Vivan Los Perros Mayales">
+
+        </div>
+        <div class="menu-content">
+
+    <!-- HEADER -->
+        <section class="hero-info">
+
+    <div class="hero-brand">
+
+        <img
+            src="img/Logo_vivvan_los_perros_page-0001-removebg-preview.png"
+            class="hero-logo"
+        >
+
+        <div>
+
+            <h1>
+                QUE VIVAN LOS PERROS 
+            </h1>
+
+    <p class="hero-slogan">
+
+        PREPÁRALO A TU GUSTO, SIN LÍMITES
+
+    </p>            
+
+            <span id="location-name">
+                Mayales Plaza 
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="hero-delivery">
+
+        🌭 Entrega estimada 10 - 20 min
+
+    </div>
+
+</section>
+
+    <!-- CATEGORÍAS -->
+
+<section class="categories menu-sections">
+
+    <section class="category menu-section" data-category="perros">
+        <div class="category-title-row">
+            <h2 class="section-title">Perros y Combos</h2>
+            <span class="section-chip">A tu gusto</span>
+        </div>
+        <div class="products" aria-label="Productos de perros y combos"></div>
+    </section>
+
+    <section class="category menu-section" data-category="bebidas">
+        <div class="category-title-row">
+            <h2 class="section-title">Bebidas</h2>
+            <span class="section-chip">Frias</span>
+        </div>
+        <div class="products" aria-label="Productos de bebidas"></div>
+    </section>
+
+    <section class="category menu-section" data-category="batidos">
+        <div class="category-title-row">
+            <h2 class="section-title">Batidos</h2>
+            <span class="section-chip">Naturales</span>
+        </div>
+        <div class="products" aria-label="Productos de batidos"></div>
+    </section>
+
+    <section class="category menu-section" data-category="crispetas">
+        <div class="category-title-row">
+            <h2 class="section-title">Crispetas</h2>
+            <span class="section-chip">Para acompanar</span>
+        </div>
+        <div class="products" aria-label="Productos de crispetas"></div>
+    </section>
+
+</section>
+
+    </div>
+
+<footer class="cart-footer">
+
+    <!-- 🔼 CONTENIDO QUE SE EXPANDE -->
+<div id="cart-expand" class="cart-expand">
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+        Total: $<span id="total">0</span>
+    </div>
+</div>
+
+    <!-- 🔽 BARRA FIJA -->
+    <div class="cart-bar">
+
+<div class="cart-left">
+<span class="material-icons cart-arrow">expand_more</span>
+    <span>Tu pedido</span>
+    <span id="cart-count" class="cart-count">0</span>
+</div>
+
+        <div class="cart-right">
+            <button>
+               <img src="assets/icons/pagar.svg" alt="Pagar">
+          </button>
+        </div>
+
+    </div>
+
+</footer>
+</div>
+
+<!-- MODAL PERSONALIZADO -->
+<div id="custom-modal" class="modal hidden">
+    <div class="modal-box">
+        <p id="modal-text"></p>
+
+        <div class="modal-actions">
+            <button id="modal-cancel">Cancelar</button>
+            <button id="modal-confirm">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+<div id="product-modal" class="modal hidden">
+
+    <div class="modal-box product-modal-box">
+
+        <div id="product-modal-content"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

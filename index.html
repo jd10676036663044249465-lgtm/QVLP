@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVAN LOS PERROS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<div id="loader">
+
+    <img
+        src="img/Logo_vivvan_los_perros_page-0001-removebg-preview.png"
+        alt="Viva Los Perros"
+        class="loader-logo"
+    >
+
+    <p>Cargando menú...</p>
+
+</div>
+
+<body>
+
+<div class="app">
+
+    <!-- BANNER -->
+    <div class="hero">
+
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="hero-video">
+
+        <source src="img/QVLP.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <img
+            src="img/Logo_vivvan_los_perros_page-0001-removebg-preview.png"
+            class="hero-logo"
+        >
+
+        <h1>PREPÁRALO A TU GUSTO</h1>
+
+        <p>
+            Sin límites. Sin reglas.
+            Solo sabor y más razones para volver.
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+    <section class="location-selector">
+
+        <span class="location-label">
+            ELIGE LA SEDE QUE TE QUEDA MÁS CERCA
+        </span>
+
+    </section>
+
+    <div class="locations">
+
+            <button type="button" class="card" data-location="mayales">
+                <h3>MAYALES</h3>
+                <p class="card-address">
+                    📍 Calle 31 #66-134
+                    </p>
+                <span class="card-tag">
+                   Disponible ahora
+                 </span>
+
+                <div class="card-enter">
+                 Entrar al menú →
+                </div>
+            </button>
+
+            <button type="button" class="card" data-location="guatapuri">
+                <h3>GUATAPURÍ</h3>
+                <p class="card-address">
+                  📍 Avenida Hurtado Diagonal 10<br>No. 6N - 15
+                    </p>
+                <span class="card-tag">
+                   Disponible ahora
+                  </span> 
+                <div class="card-enter">
+                    Entrar al menú →
+                </div>
+            </button>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2026 - DACO software development and innovation </p>
+    </footer>
+
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

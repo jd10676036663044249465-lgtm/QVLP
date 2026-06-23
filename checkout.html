@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar pedido</title>
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<div id="loader">
+
+    <img
+        src="img/Logo_vivvan_los_perros_page-0001-removebg-preview.png"
+        alt="Vivan Los Perros"
+        class="loader-logo"
+    >
+
+    <p>Preparando tu pedido...</p>
+
+</div>
+<body>
+
+            <div class="top-bar">
+
+    <button class="back-btn">
+        <img src="assets/icons/flecha.svg" alt="Volver">
+    </button>
+
+    <h2>Finalizar y pagar</h2>
+
+</div>
+
+<div class="store-card">
+
+    <div class="store-badge">
+        🌭
+    </div>
+
+    <div class="store-info">
+
+        <span class="store-label">
+            Entrega desde - Mayales
+        </span>
+
+        <h3 id="store-name">
+            VIVAN LOS PERROS
+        </h3>
+
+        <p id="store-address">
+            Tu creación está casi lista, Completa tus datos y prepárate para disfrutarla.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FORM -->
+<section class="checkout-form">
+
+    <div class="floating-field">
+
+    <input
+        type="text"
+        id="customer-name"
+        placeholder=" "
+    >
+
+    <label for="customer-name">
+        Nombre completo
+    </label>
+
+</div>
+
+<div class="floating-field">
+
+    <input
+        type="tel"
+        id="customer-phone"
+        placeholder=" "
+    >
+
+    <label for="customer-phone">
+        Teléfono
+    </label>
+
+</div>
+
+<div class="floating-field">
+
+    <input
+        type="text"
+        id="address"
+        placeholder=" "
+    >
+
+    <label for="address">
+        Dirección de entrega
+    </label>
+
+</div>
+
+<div class="payment-section">
+
+    <h4>Método de pago</h4>
+
+    <div class="payment-options">
+
+        <button
+            type="button"
+            class="payment-card"
+            data-payment="efectivo">
+
+            💵
+            <span>Efectivo</span>
+
+        </button>
+
+        <button
+            type="button"
+            class="payment-card"
+            data-payment="transferencia">
+
+            🏦
+            <span>Transferencia</span>
+
+        </button>
+
+    </div>
+
+</div>
+   <!-- DETALLES -->
+<div class="order-box">
+
+    <div class="order-header">
+
+    <span class="order-label">
+
+        🌭 REVISA TU CREACIÓN ANTES DE ENVIARLA A COCINA
+
+    </span>
+
+</div>
+
+</div>
+
+    <div id="cart-items"></div>
+
+    <div class="total-row">
+
+    <span class="total-label">
+        Total del pedido
+    </span>
+
+    <span class="total-line"></span>
+
+    <span class="total-value">
+        $<span id="total">0</span>
+    </span>
+
+</div>
+
+    <div class="order-time-mini">
+
+    <span class="time-dot"></span>
+
+    <span>
+        Tu pedido tiene una entrega estimada de:
+        <strong>10-15 min</strong>
+    </span>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="checkout-footer">
+
+    <button
+        class="confirm-order-btn"
+        onclick="sendOrder()">
+
+        <span class="confirm-text">
+
+            Confirma tu pedido →
+
+        </span>
+
+        <img
+            src="assets/icons/boton_pagar.svg"
+            class="confirm-hotdog"
+        >
+
+    </button>
+
+</footer>
+
+<!-- MODAL PERSONALIZADO -->
+<div id="custom-modal" class="modal hidden">
+    <div class="modal-box">
+        <p id="modal-text"></p>
+
+        <div class="modal-actions">
+            <button id="modal-cancel">Cancelar</button>
+            <button id="modal-confirm">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
