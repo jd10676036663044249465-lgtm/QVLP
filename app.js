@@ -2434,7 +2434,7 @@ function sendOrder() {
     const phone = "573044249465";
 
     const url =
-        `https://wa.me/${3044249465}?text=${encodeURIComponent(message)}`;
+        `https://wa.me/${3155879918}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
 
