@@ -683,7 +683,7 @@ const data = {
 
                     type: "shake",
 
-                    name: "Piña + Apio + Pepino",
+                    name: "Piña + Apio + Pepino + Perejil",
 
                     price: 9500,
 
@@ -692,21 +692,6 @@ const data = {
                     customizable: false
                 },
 
-                {
-                    id: "verde_perejil_naranja",
-
-                    type: "shake",
-
-                    name: "Perejil + Naranja",
-
-                    price: 9500,
-
-                    img: "img/products/Batidos/Perejíl_Naranja.webp",
-
-                    customizable: false
-                }
-
-            ],
 
             en_leche: [
 
