@@ -683,7 +683,7 @@ const data = {
 
                     type: "shake",
 
-                    name: "Piña + Apio + Pepino + Perejil",
+                    name: "Piña + Apio ",
 
                     price: 9500,
 
